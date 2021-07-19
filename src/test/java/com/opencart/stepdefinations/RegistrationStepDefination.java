@@ -22,7 +22,7 @@ public class RegistrationStepDefination {
 		RegistrationPage regPage;
 		Properties prop;
 
-//		//Desc- User able to register the account
+		//Desc- User able to register the account
 		
 			@Given("^user launch correct url$")
 			public void user_launch_correct_url() throws Throwable {

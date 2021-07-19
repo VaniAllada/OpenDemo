@@ -36,4 +36,32 @@ And Log the success msg
 And Scroll down and click on logout button
 Then Click continue to return to homepage.
 
+Scenario: Verify the User is able to upload a file 
+When Mouseover to the Components tab
+And Click on monitors and Click on"Apple Cinema 30"
+And Enter all the required fields and upload file  in available options
+And Click on Add to cart button and the item should be added to the cart
+Then If the file is not uploaded then it should throw an error message 
+
+Scenario: Verify if the user is able to check the product availabilty and checkout 
+When Enter Iphone in the search option and click on the search button
+And Select Iphone and Enter the quantity as two
+And Click the Add to Cart button and Select item cart on the right corner
+Then Click Checkout Option
+
+Scenario: Verify if the user is able to remove item from the cart
+When Mouseover to Laptop & Notebook and select Show all Laptops & Notebooks
+And Select HP LP3065 and click on the add to cart button
+And Go to Shopping cart tab and click on the Shopping Cart 
+And Remove the item from the cart 
+Then Click on continue
+
+Scenario: Verify if the user is able to apply coupon code
+When Mouseover to Laptop & Notebooks Select Show all Laptops And Notebooks
+And Select HP LP3065
+And Change the delivery date and quantity
+And Click on "Add to cart"
+And Click on "Shopping Cart"
+Then Enter the Coupon Code and click on the "apply coupon" button
+
 

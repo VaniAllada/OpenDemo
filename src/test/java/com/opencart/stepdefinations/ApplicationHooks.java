@@ -16,18 +16,16 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-//import io.cucumber.java.After;
-//import io.cucumber.java.Before;
-//import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
 
+	//Variable Declartion
 	private DriverFactory driverFactory;
 	private WebDriver driver;
-	
 	private ConfigReader configReader;
 	Properties prop;
 	
+	//annotations
 	@Before(order = 0)
 	public void getProperty() {
 		configReader = new ConfigReader();
@@ -45,7 +43,7 @@ public class ApplicationHooks {
 	
 	@After(order = 0)
 	public void quitBrowser() {
-		//driverFactory.getDriver().close();
+		driverFactory.getDriver().close();    // closing bowser
 	}
 	
 	@After(order = 1)
@@ -53,7 +51,7 @@ public class ApplicationHooks {
 		if (scenario.isFailed()) {
 
 			try {
-
+    // Taking Screenshot code for failed Testcases
 				final byte[] screenshot = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.BYTES);
 				scenario.embed(screenshot, "image/png"); // ... and embed it in
 			} catch (WebDriverException e) {

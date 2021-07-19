@@ -18,9 +18,11 @@ import cucumber.api.java.en.When;
 
 public class LoginStepDefination {
 
+	//Variable Declaration
 	   LoginPage loginPage;
 	   public static Properties prop;
 	   
+	 //Desc- Mapping the snippets for actions of login
 	  @Given("^open chrome browser and entering opencart url$")
 	   public void open_chrome_browser_and_entering_opencart_url() throws Throwable {
 		   loginPage=new LoginPage(DriverFactory.getDriver());	

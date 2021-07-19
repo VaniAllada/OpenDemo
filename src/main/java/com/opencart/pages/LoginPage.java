@@ -11,11 +11,15 @@ import com.opencart.factory.DriverFactory;
 
 public class LoginPage extends DriverFactory {
 	
+	//Variable Declartion
 	private WebDriver driver;
+	
+	//Desc- LoginPage constructor
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
+	//methods
 	public void MyAccountClick() {
 		
 		WebElement myAcc=driver.findElement(By.xpath("//a[@title='My Account']"));

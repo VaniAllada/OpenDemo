@@ -7,8 +7,10 @@ import java.util.Properties;
 
 public class ConfigReader {
 	
+	//Variables Initialization 
 	private Properties prop ;
 	
+	//Init method
 	public Properties init_prop() {
 		
 		prop = new Properties();
