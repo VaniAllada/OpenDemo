@@ -14,11 +14,15 @@ import com.opencart.utils.TestUtils;
 
 public class PlaceAnOrder {
 
+	//Variable Declartion
 	private WebDriver driver;
+	
+	//Desc- PlaceAnOrder constructor
 	public PlaceAnOrder(WebDriver driver) {
 		this.driver = driver;
 	}
 	
+	//methods
 	public void mouseOnOverLaptopsAndNoteBooks() {
 		
 		WebElement laptopNotebook = driver.findElement(By.xpath("//a[text()='Laptops & Notebooks']"));	

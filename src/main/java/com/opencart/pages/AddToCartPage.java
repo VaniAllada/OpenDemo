@@ -13,7 +13,9 @@ import com.opencart.utils.TestUtils;
 
 public class AddToCartPage extends DriverFactory {
 	
+	//Variable Declaration
 	private WebDriver driver;
+	
 	public AddToCartPage(WebDriver driver) {
 		this.driver = driver;
 	}

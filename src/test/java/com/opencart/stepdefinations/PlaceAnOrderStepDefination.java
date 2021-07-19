@@ -17,6 +17,7 @@ public class PlaceAnOrderStepDefination {
 	  PlaceAnOrder placeOrder;
 	  public static Properties prop;
 	   
+	//Desc- Mapping the snippets for actions for place an order
 	@When("^mouse over on laptops and notebooks and click on show all laptops and notepads$")
 	public void mouse_over_on_laptops_and_notebooks_and_click_on_show_all_laptops_and_notepads() throws Throwable {
 		placeOrder = new PlaceAnOrder(DriverFactory.getDriver());

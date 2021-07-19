@@ -20,6 +20,7 @@ public class AddToCartStepDefinations extends DriverFactory {
 	   public static Properties prop;
 	   AddToCartPage addToCartPage;
 	   
+	   //Desc- AddTocartStepDefinations
 	   @When("^mouse over the desktop and click the mac from dropdown$")
 	   public void mouse_over_the_desktop_and_click_the_mac_from_dropdown() throws Throwable {
 		   addToCartPage=new AddToCartPage(DriverFactory.getDriver());				
